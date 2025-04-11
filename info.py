@@ -27,7 +27,7 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/fe628eed9d16ebab
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/14ca5674072491cda2d59.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1807927334 1133549523').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1807927334 7446337623').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002108939580').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -49,10 +49,10 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'brieflyurl.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'd35593bdd2032426cb96230d85a18082a1ace7a7')
-SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'brieflyurl.com')
-SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', 'd35593bdd2032426cb96230d85a18082a1ace7a7')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'papajiurl.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '77960489f7791283414e359c32475f1f07e0fdd3')
+SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'papajiurl.com')
+SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '77960489f7791283414e359c32475f1f07e0fdd3')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
